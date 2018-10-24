@@ -12,9 +12,19 @@ namespace teste1
     {
         protected void Application_Start()
         {
+            Application["ContadorAcessos"] = 0;
             AreaRegistration.RegisterAllAreas();
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
+        }
+
+        protected void Session_Start(object sender, EventArgs e)
+        {
+            Application["ContadorAcessos"] = (int)(Application["ContadorAcessos"]) + 1;
+        }
+        protected void Session_End(Object sender, EventArgs e)
+        {
+            Application["ContadorAcessos"] = (int)(Application["ContadorAcessos"]) - 1;
         }
     }
 }
