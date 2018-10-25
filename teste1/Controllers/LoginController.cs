@@ -17,7 +17,7 @@ namespace teste1.Controllers
         public ActionResult Logar(string email, string password)
         {
 
-            if(email == "hudsonluis.costa@gmail.com" && password == "starwark11")
+            if(email =="silvestre" || email == "Silvestre" && password == "silvestre" | password == "Silvestre")
             {
                 return RedirectToAction("Index","Home");
             }

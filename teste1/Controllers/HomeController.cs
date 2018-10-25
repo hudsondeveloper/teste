@@ -10,7 +10,7 @@ namespace teste1.Controllers
     {
         public ActionResult Index()
         {            
-            Session["user"] = "hudson";
+            Session["user"] = "Silvestre";
             ViewBag.Title="Repositorio";
             return View();
         }
