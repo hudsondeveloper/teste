@@ -56,5 +56,9 @@ namespace teste1.Controllers
         {
             return View();
         }
+        public ActionResult Readme()
+        {
+            return View();
+        }
     }
 }

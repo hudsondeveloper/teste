@@ -29,6 +29,72 @@
                 </a>
             </div>
         </div>
+
+        <!--codigo para copiar-->
+        <div class="col-lg-2 col-md-4">
+
+            <div class="panel panel-default">
+
+                <div class="panel-heading">
+                    container azul
+                    <button id="button1">copiar</button>
+                </div>
+
+                <div class="panel-body">
+                    <textarea id="textarea1" readonly cols="27" rows="5" class="form-control">
+                    <div class="col-lg-3 col-md-6">
+                    <div class="panel panel-primary">
+                    <div class="panel-heading">
+                    <div class="row">
+                    <div class="col-xs-3">
+                    <i class="fa fa-comments fa-5x"></i>
+                        </div>
+                    <div class="col-xs-9 text-right">
+                    <div class="huge">26</div>
+                    <div>New Comments!</div>
+                        </div>
+                    </div>
+                </div>
+                    <a href="#">
+                    <div class="panel-footer">
+                    <span class="pull-left">View Details</span>
+                    <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                    <div class="clearfix"></div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+                    </textarea>
+                </div>
+                <!-- /.panel-body -->
+            </div>
+            <!-- /.panel -->
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script>
+            $(function () {
+
+                $('#button1').click(function () {
+
+                    $('#textarea1').select();
+                    // Copia o conteudo selecionado
+                    var copiar = document.execCommand('copy');
+                    // Verifica se foi copia e retona mensagem
+                    if (copiar) {
+                        alert('Copiado');
+                    } else {
+                        alert('Erro ao copiar, seu navegador pode não ter suporte a essa função.');
+                    }
+                    // Cancela a execução do formulário
+                    return false;
+                });
+            });
+        </script>
+        <!-- ^-->
+        <!-- |-->
+        <!--codigo para copiar-->
+
         <div class="col-lg-3 col-md-6">
             <div class="panel panel-green">
                 <div class="panel-heading">
@@ -51,6 +117,74 @@
                 </a>
             </div>
         </div>
+
+        <!--codigo para copiar-->
+        <div class="col-lg-2 col-md-4">
+
+            <div class="panel panel-default">
+
+                <div class="panel-heading">
+                    container verde
+                    <button id="button2">copiar</button>
+                </div>
+
+                <div class="panel-body">
+
+                    <textarea id="textarea2" readonly cols="27" rows="5" class="form-control">
+
+                    <div class="col-lg-3 col-md-6">
+                    <div class="panel panel-green">
+                    <div class="panel-heading">
+                    <div class="row">
+                    <div class="col-xs-3">
+                    <i class="fa fa-tasks fa-5x"></i>
+                        </div>
+                    <div class="col-xs-9 text-right">
+                    <div class="huge">12</div>
+                    <div>New Tasks!</div>
+                        </div>
+                    </div>
+                </div>
+                    <a href="#">
+                    <div class="panel-footer">
+                    <span class="pull-left">View Details</span>
+                    <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                    <div class="clearfix"></div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+
+                    </textarea>
+                </div>
+                <!-- /.panel-body -->
+            </div>
+            <!-- /.panel -->
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script>
+            $(function () {
+
+                $('#button2').click(function () {
+
+                    $('#textarea2').select();
+                    // Copia o conteudo selecionado
+                    var copiar = document.execCommand('copy');
+                    // Verifica se foi copia e retona mensagem
+                    if (copiar) {
+                        alert('Copiado');
+                    } else {
+                        alert('Erro ao copiar, seu navegador pode não ter suporte a essa função.');
+                    }
+                    // Cancela a execução do formulário
+                    return false;
+                });
+            });
+        </script>
+        <!-- ^-->
+        <!-- |-->
+        <!--codigo para copiar-->
         <div class="col-lg-3 col-md-6">
             <div class="panel panel-yellow">
                 <div class="panel-heading">
@@ -73,6 +207,74 @@
                 </a>
             </div>
         </div>
+
+        <!--codigo para copiar-->
+        <div class="col-lg-2 col-md-4">
+
+            <div class="panel panel-default">
+
+                <div class="panel-heading">
+                    container amarelo
+                    <button id="button3">copiar</button>
+                </div>
+
+                <div class="panel-body">
+
+                    <textarea id="textarea3" readonly cols="27" rows="5" class="form-control">
+
+                    <div class="col-lg-3 col-md-6">
+                    <div class="panel panel-yellow">
+                    <div class="panel-heading">
+                    <div class="row">
+                    <div class="col-xs-3">
+                    <i class="fa fa-shopping-cart fa-5x"></i>
+                        </div>
+                    <div class="col-xs-9 text-right">
+                    <div class="huge">124</div>
+                    <div>New Orders!</div>
+                        </div>
+                    </div>
+                </div>
+                    <a href="#">
+                    <div class="panel-footer">
+                    <span class="pull-left">View Details</span>
+                    <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                    <div class="clearfix"></div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+                    </textarea>
+                </div>
+                <!-- /.panel-body -->
+            </div>
+            <!-- /.panel -->
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script>
+            $(function () {
+
+                $('#button3').click(function () {
+
+                    $('#textarea3').select();
+                    // Copia o conteudo selecionado
+                    var copiar = document.execCommand('copy');
+                    // Verifica se foi copia e retona mensagem
+                    if (copiar) {
+                        alert('Copiado');
+                    } else {
+                        alert('Erro ao copiar, seu navegador pode não ter suporte a essa função.');
+                    }
+                    // Cancela a execução do formulário
+                    return false;
+                });
+            });
+        </script>
+        <!-- ^-->
+        <!-- |-->
+        <!--codigo para copiar-->
+
         <div class="col-lg-3 col-md-6">
             <div class="panel panel-red">
                 <div class="panel-heading">
@@ -95,8 +297,77 @@
                 </a>
             </div>
         </div>
+
+        <!--codigo para copiar-->
+        <div class="col-lg-2 col-md-4">
+
+            <div class="panel panel-default">
+
+                <div class="panel-heading">
+                    container vermelho
+                    <button id="button4">copiar</button>
+                </div>
+
+                <div class="panel-body">
+
+                    <textarea id="textarea4" readonly cols="27" rows="5" class="form-control">
+                    <div class="col-lg-3 col-md-6">
+                    <div class="panel panel-red">
+                    <div class="panel-heading">
+                    <div class="row">
+                    <div class="col-xs-3">
+                    <i class="fa fa-support fa-5x"></i>
+                                    </div>
+                    <div class="col-xs-9 text-right">
+                    <div class="huge">13</div>
+                    <div>Support Tickets!</div>
+                                    </div>
+                                </div>
+                            </div>
+                    <a href="#">
+                    <div class="panel-footer">
+                    <span class="pull-left">View Details</span>
+                    <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                    <div class="clearfix"></div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    </textarea>
+                </div>
+                <!-- /.panel-body -->
+            </div>
+            <!-- /.panel -->
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script>
+            $(function () {
+
+                $('#button4').click(function () {
+
+                    $('#textarea4').select();
+                    // Copia o conteudo selecionado
+                    var copiar = document.execCommand('copy');
+                    // Verifica se foi copia e retona mensagem
+                    if (copiar) {
+                        alert('Copiado');
+                    } else {
+                        alert('Erro ao copiar, seu navegador pode não ter suporte a essa função.');
+                    }
+                    // Cancela a execução do formulário
+                    return false;
+                });
+            });
+        </script>
+        <!-- ^-->
+        <!-- |-->
+        <!--codigo para copiar-->
+
     </div>
     <!-- /.row -->
+   
+
     <div class="row">
         <div class="col-lg-8">
             <div class="panel panel-default">
@@ -133,6 +404,8 @@
                 <!-- /.panel-body -->
             </div>
             <!-- /.panel -->
+          
+
             <div class="panel panel-default">
                 <div class="panel-heading">
                     <i class="fa fa-bar-chart-o fa-fw"></i> Bar Chart Example

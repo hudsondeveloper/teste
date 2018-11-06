@@ -1912,6 +1912,7 @@
     <Content Include="Views\Home\Panel.cshtml" />
     <Content Include="Views\Home\Tables.cshtml" />
     <Content Include="Views\Home\Typography.cshtml" />
+    <Content Include="Views\Home\Readme.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
