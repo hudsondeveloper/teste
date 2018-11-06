@@ -19,7 +19,7 @@ namespace teste1.Controllers
 
             if(email =="silvestre" || email == "Silvestre" && password == "silvestre" | password == "Silvestre")
             {
-                return RedirectToAction("Index","Home");
+                return RedirectToAction("Readme","Home");
             }
             return RedirectToAction("Index", "Login");
         }

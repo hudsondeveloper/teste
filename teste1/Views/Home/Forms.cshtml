@@ -16,11 +16,13 @@
                     <div class="row">
                         <div class="col-lg-6">
                             <form role="form">
-                                <div class="form-group">
-                                    <label>Text Input</label>
-                                    <input class="form-control">
-                                    <p class="help-block">Example block-level help text here.</p>
-                                </div>
+                                <a href="#input1" style="text-decoration:none;color:black">
+                                    <div class="form-group">
+                                        <label>Text Input</label>
+                                        <input class="form-control">
+                                        <p class="help-block">Example block-level help text here.</p>
+                                    </div>
+                                </a>
                                 <div class="form-group">
                                     <label>Text Input with Placeholder</label>
                                     <input class="form-control" placeholder="Enter text">
@@ -201,5 +203,55 @@
         <!-- /.col-lg-12 -->
     </div>
     <!-- /.row -->
+
+    <!--codigo para copiar-->
+    <div class="col-lg-2 col-md-4" id="input1">
+
+        <div class="panel panel-default">
+
+            <div class="panel-heading">
+                Text input
+
+                <button id="button1">copiar</button>
+            </div>
+
+            <div class="panel-body">
+                <textarea id="textarea1" readonly cols="27" rows="5" class="form-control">
+
+                <div class="form-group">
+                <label>Text Input</label>
+                <input class="form-control">
+
+                <p class="help-block">Example block-level help text here.</p>
+                                    </div>
+                    </textarea>
+            </div>
+            <!-- /.panel-body -->
+        </div>
+        <!-- /.panel -->
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+        $(function () {
+
+            $('#button1').click(function () {
+
+                $('#textarea1').select();
+                // Copia o conteudo selecionado
+                var copiar = document.execCommand('copy');
+                // Verifica se foi copia e retona mensagem
+                if (copiar) {
+                    alert('Copiado');
+                } else {
+                    alert('Erro ao copiar, seu navegador pode não ter suporte a essa função.');
+                }
+                // Cancela a execução do formulário
+                return false;
+            });
+        });
+    </script>
+    <!-- ^-->
+    <!-- |-->
+    <!--codigo para copiar-->
 </div>
 <!-- /#page-wrapper -->
